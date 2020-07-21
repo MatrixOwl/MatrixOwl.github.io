@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-07-21T04:47:38.210Z</updated>
+    <updated>2020-07-21T04:54:03.420Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://matrixowl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, What If?</rights>
     <entry>
-        <title type="html"><![CDATA[# So ... this must be a bolg]]></title>
+        <title type="html"><![CDATA[So ... this must be a bolg]]></title>
         <id>https://matrixowl.github.io/post/so-this-must-be-a-bolg/</id>
         <link href="https://matrixowl.github.io/post/so-this-must-be-a-bolg/">
         </link>

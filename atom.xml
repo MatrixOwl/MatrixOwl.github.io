@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-07-24T08:42:31.214Z</updated>
+    <updated>2020-07-25T08:00:05.048Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -11,13 +11,22 @@
     <icon>https://matrixowl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, What If?</rights>
     <entry>
+        <title type="html"><![CDATA[Dynamic Graph -- What problems we are face at?]]></title>
+        <id>https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/</id>
+        <link href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">
+        </link>
+        <updated>2020-07-24T09:02:43.000Z</updated>
+        <content type="html"><![CDATA[<p>As the saying gose &quot;To beat your enemy, you have to know your enemy&quot;.</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Dynamic Graph 1]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-1/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-1/">
         </link>
         <updated>2020-07-24T07:54:16.000Z</updated>
-        <content type="html"><![CDATA[<p>The first paper I writen was about increase leaning (But that was a sad story). So after that I have always think about one question: Can network naturaly increase class?<br>
-So I have read many paper in class increase learning but there is one problem. It seem like everyone in this area all try to use a way to keep the information of old data than mix them with new data than make a new training of network (It called distiallation) rather than find a way to increase network itself. Of course there are some work on change the network itself but as for my review the most close way is build a new network than find a way to connect the old one and the new one.<br>
+        <content type="html"><![CDATA[<p>The first paper I writen was about incremental leaning (But that was a sad story). So after that I have always think about one question: Can network naturaly increase class?<br>
+So I have read many paper in class incremental learning but there is one problem. It seem like everyone in this area all try to use a way to keep the information of old data than mix them with new data than make a new training of network (It called distiallation) rather than find a way to incremental network itself. Of course there are some work on change the network itself but as for my review the most close way is build a new network than find a way to connect the old one and the new one.<br>
 After that I have a tiny idea: can we make a dynamic network? The network will just like a graph but it can change struct when the new class data input. I guess I will try to work on this way. So just make this article as a perface.</p>
 ]]></content>
     </entry>

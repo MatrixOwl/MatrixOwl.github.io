@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Dynamic Graph -- What problems we are face at? | What If?</title>
+<title>Dynamic Graph 2 -- What problems we are face at? | What If?</title>
 <meta name="description" content="Let&#39;s fucking do something really interesting">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1595664199107">
+<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1595667399817">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -65,14 +65,22 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>Dynamic Graph -- What problems we are face at?</h1>
+            <h1>Dynamic Graph 2 -- What problems we are face at?</h1>
             <p class="article-meta">
               2020-07-24
               
             </p>
             
             <div class="post-content">
-              <p>As the saying gose &quot;To beat your enemy, you have to know your enemy&quot;.</p>
+              <p>As the saying gose &quot;To beat your enemy, you have to know your enemy&quot;.<br>
+So, what challenge we are faceing at?</p>
+<ol>
+<li>The catastrophic forget. This problem is often referred in incremental learning. When the new class input, the network will start a new training, but when the back propagation start, the network will soon find that old neurous parameter can't fit the new class. So the network will do it best to fit the new class data, it will couse the catastrophic forget (accurately it the properties of Rule function and Softmax function couse the catastrophic forget. I will discuss that in another article later). There are many papers about this problem, so I will discuss how should we deal this problem in another article.</li>
+<li>How network initialize. I have to say this is a new area that seems like no one have ever work on that. But it is a very important problem for my work. How we initialize it will decision how it will become. Many artificial neurou network using the layer structure, but I think the layer structure is very not &quot;natural&quot;. So I think the really &quot;natural&quot; way is initialize network with graph structure. But another problem came, what kind of shape of the graph should we use? Layer have a very stable shape, we don't have to consider what kind of shape we should use, becouse there only one shape, and graph structure will couse some big trouble when programming. So, here comes some schemes, becouse the layer also a kind of graph in essence, so we can keep layer structure when initialize, then when the growth start, the shape will change naturelly. Another solution is random initilize a graph. I think both of them are desirable.</li>
+<li>How to keep the network's plasticity. Some paper said in human's brain, we use forget to keep the brain remember the new thing. It funny something we try to avoid may become a key to optimize our work. Initiative forget is a good direction I may watch some paper in this are later. I guess we should use a little bit of initiative forget when learning new class.</li>
+<li>How many kind of neurous we should use. This is a big topic, I will discuss that in another article.</li>
+<li>How should we make a back propagation in irregular network.</li>
+</ol>
 
             </div>
           </article>
@@ -96,7 +104,7 @@
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://matrixowl.github.io/images/avatar.png?v=1595664199107" class="no-responsive avatar">
+    <img src="https://matrixowl.github.io/images/avatar.png?v=1595667399817" class="no-responsive avatar">
     <div class="text-muted">Let's fucking do something really interesting</div>
     <div class="social-container">
       
@@ -121,7 +129,7 @@
         
           
             <li>
-              <a href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">Dynamic Graph -- What problems we are face at?</a>
+              <a href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">Dynamic Graph 2 -- What problems we are face at?</a>
             </li>
           
         

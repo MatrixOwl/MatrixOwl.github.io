@@ -7,7 +7,7 @@
 <meta name="description" content="Let&#39;s fucking do something really interesting">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1595667399817">
+<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1595669558325">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -79,7 +79,10 @@ So, what challenge we are faceing at?</p>
 <li>How network initialize. I have to say this is a new area that seems like no one have ever work on that. But it is a very important problem for my work. How we initialize it will decision how it will become. Many artificial neurou network using the layer structure, but I think the layer structure is very not &quot;natural&quot;. So I think the really &quot;natural&quot; way is initialize network with graph structure. But another problem came, what kind of shape of the graph should we use? Layer have a very stable shape, we don't have to consider what kind of shape we should use, becouse there only one shape, and graph structure will couse some big trouble when programming. So, here comes some schemes, becouse the layer also a kind of graph in essence, so we can keep layer structure when initialize, then when the growth start, the shape will change naturelly. Another solution is random initilize a graph. I think both of them are desirable.</li>
 <li>How to keep the network's plasticity. Some paper said in human's brain, we use forget to keep the brain remember the new thing. It funny something we try to avoid may become a key to optimize our work. Initiative forget is a good direction I may watch some paper in this are later. I guess we should use a little bit of initiative forget when learning new class.</li>
 <li>How many kind of neurous we should use. This is a big topic, I will discuss that in another article.</li>
-<li>How should we make a back propagation in irregular network.</li>
+<li>How should we make a back propagation in irregular network. Dynamic graph will couse a irregular network, it will very hard to make every neurous to follow a same rule when back propagaion, but if we make every neurou and connect have a single caculation will consumes a lot of computing resources.</li>
+<li>The input and output. How to deal with input data and output data is connect with last problem.</li>
+<li>How to decision when the neurous should increase and when to decrease. To deal with this problem, we should check every nuerou's active, and make the over active nuerou be keep and make the unactive nuerous decrease. Or another idea is just increase but not decrease, we make network running, when the unactive nuerous lower than a threshold the nuerous of our network will increase. This is also very tricky.</li>
+<li>Will graph become a network composition by many cluster? Maybe, I guess will.</li>
 </ol>
 
             </div>
@@ -104,7 +107,7 @@ So, what challenge we are faceing at?</p>
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://matrixowl.github.io/images/avatar.png?v=1595667399817" class="no-responsive avatar">
+    <img src="https://matrixowl.github.io/images/avatar.png?v=1595669558325" class="no-responsive avatar">
     <div class="text-muted">Let's fucking do something really interesting</div>
     <div class="social-container">
       

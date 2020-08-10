@@ -1,59 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://matrixowl.github.io</id>
-    <title>What If?</title>
-    <updated>2020-08-10T07:50:10.150Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://matrixowl.github.io"/>
-    <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
-    <subtitle>Let&apos;s fucking do something really interesting</subtitle>
-    <logo>https://matrixowl.github.io/images/avatar.png</logo>
-    <icon>https://matrixowl.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, What If?</rights>
-    <entry>
-        <title type="html"><![CDATA[Dynamic Graph3 -- Catastrophic forget]]></title>
-        <id>https://matrixowl.github.io/post/dynamic-graph3-catas/</id>
-        <link href="https://matrixowl.github.io/post/dynamic-graph3-catas/">
-        </link>
-        <updated>2020-08-08T04:58:33.000Z</updated>
-        <content type="html"><![CDATA[<p>The first time I start pay attention to Dynamic Graph network was I try to find a way to solve the catastrophic forget problem in continu learning(or class-increment learning).<br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Dynamic Graph3 -- Catastrophic forget | What If?</title>
+<meta name="description" content="Let&#39;s fucking do something really interesting">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1597045777406">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://matrixowl.github.io/styles/main.css">
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://matrixowl.github.io">What If?</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="https://matrixowl.github.io/post/so-this-must-be-a-bolg" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>Dynamic Graph3 -- Catastrophic forget</h1>
+            <p class="article-meta">
+              2020-08-08
+              
+            </p>
+            
+            <div class="post-content">
+              <p>The first time I start pay attention to Dynamic Graph network was I try to find a way to solve the catastrophic forget problem in continu learning(or class-increment learning).<br>
 The catastrophic forget is when continu learning begin and the data of new class input, the network will forget the old class. It's becouse the softmax function is more bias to the new class. That's why when we train a deep learning model we should mix all class together but can't just put in as queue.So many paper try to find a good way to mix the data of old class and new class. Most of them is try find the feature of old class than mix with new class. I have to say this way is useable but it just treat the symptoms but not the root cause.<br>
 I think the root of this problem is the neural. When the new class data input, the neural will start updata the parameter and after that, this neural's parameter will lost the relationship with the old class. So we have to find a methed to keep the information of old class. In 2020 a paper have solve this problem with a study of animal's nervous system.<br>
 In this paper, following the logic of the elastic weight consolidation method (EWC), each connection weight <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">w_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> in the NN is matched by its “significance” for the skill acquired during training on the first training set A. The “significance” of the weight w i shows how much the change of the weight <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">w_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> will be penalized when training on the next training set B. That is, a change in the weight of w i is penalized the more, the more its “significance” is.<br>
 So, this paper give the loss function as</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mo>=</mo><msub><mi>L</mi><mi>B</mi></msub><mo>+</mo><mfrac><mi>λ</mi><mn>2</mn></mfrac><mo>∑</mo><mrow><msub><mi>F</mi><mi>i</mi></msub><mo>(</mo><msub><mi>w</mi><mi>i</mi></msub><mo>−</mo><msub><msup><mi>w</mi><mo>∗</mo></msup><mrow><mi>A</mi><mo separator="true">,</mo><mi>i</mi></mrow></msub><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">L = L_B + \frac{\lambda}{2}\sum{F_i(w_i - {w^*}_{A, i})^2}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">λ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-symbol large-op" style="position:relative;top:-0.000004999999999977245em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.738696em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.328331em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">A</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dynamic Graph 2 -- What problems we are face at?]]></title>
-        <id>https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/</id>
-        <link href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">
-        </link>
-        <updated>2020-07-24T09:02:43.000Z</updated>
-        <content type="html"><![CDATA[<p>As the saying gose &quot;To beat your enemy, you have to know your enemy&quot;.<br>
-So, what challenge we are faceing at?</p>
-<ol>
-<li>The catastrophic forget. This problem is often referred in incremental learning. When the new class input, the network will start a new training, but when the back propagation start, the network will soon find that old neurous parameter can't fit the new class. So the network will do it best to fit the new class data, it will couse the catastrophic forget (accurately it the properties of Rule function and Softmax function couse the catastrophic forget. I will discuss that in another article later). There are many papers about this problem, so I will discuss how should we deal this problem in another article.</li>
-<li>How network initialize. I have to say this is a new area that seems like no one have ever work on that. But it is a very important problem for my work. How we initialize it will decision how it will become. Many artificial neurou network using the layer structure, but I think the layer structure is very not &quot;natural&quot;. So I think the really &quot;natural&quot; way is initialize network with graph structure. But another problem came, what kind of shape of the graph should we use? Layer have a very stable shape, we don't have to consider what kind of shape we should use, becouse there only one shape, and graph structure will couse some big trouble when programming. So, here comes some schemes, becouse the layer also a kind of graph in essence, so we can keep layer structure when initialize, then when the growth start, the shape will change naturelly. Another solution is random initilize a graph. I think both of them are desirable.</li>
-<li>How to keep the network's plasticity. Some paper said in human's brain, we use forget to keep the brain remember the new thing. It funny something we try to avoid may become a key to optimize our work. Initiative forget is a good direction I may watch some paper in this are later. I guess we should use a little bit of initiative forget when learning new class.</li>
-<li>How many kind of neurous we should use. This is a big topic, I will discuss that in another article.</li>
-<li>How should we make a back propagation in irregular network. Dynamic graph will couse a irregular network, it will very hard to make every neurous to follow a same rule when back propagaion, but if we make every neurou and connect have a single caculation will consumes a lot of computing resources.</li>
-<li>The input and output. How to deal with input data and output data is connect with last problem.</li>
-<li>How to decision when the neurous should increase and when to decrease. To deal with this problem, we should check every nuerou's active, and make the over active nuerou be keep and make the unactive nuerous decrease. Or another idea is just increase but not decrease, we make network running, when the unactive nuerous lower than a threshold the nuerous of our network will increase. This is also very tricky.</li>
-<li>Will graph become a network composition by many cluster? Maybe, I guess will.</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dynamic Graph 1]]></title>
-        <id>https://matrixowl.github.io/post/dynamic-graph-1/</id>
-        <link href="https://matrixowl.github.io/post/dynamic-graph-1/">
-        </link>
-        <updated>2020-07-24T07:54:16.000Z</updated>
-        <content type="html"><![CDATA[<p>The first paper I writen was about incremental leaning (But that was a sad story). So after that I have always think about one question: Can network naturaly increase class?<br>
-So I have read many paper in class incremental learning but there is one problem. It seem like everyone in this area all try to use a way to keep the information of old data than mix them with new data than make a new training of network (It called distiallation) rather than find a way to incremental network itself. Of course there are some work on change the network itself but as for my review the most close way is build a new network than find a way to connect the old one and the new one.<br>
-After that I have a tiny idea: can we make a dynamic network? The network will just like a graph but it can change struct when the new class data input. I guess I will try to work on this way. So just make this article as a perface.</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">
+                <h3 class="post-title">
+                  Dynamic Graph 2 -- What problems we are face at?
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://matrixowl.github.io/images/avatar.png?v=1597045777406" class="no-responsive avatar">
+    <div class="text-muted">Let's fucking do something really interesting</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://matrixowl.github.io/post/dynamic-graph3-catas/">Dynamic Graph3 -- Catastrophic forget</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">Dynamic Graph 2 -- What problems we are face at?</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://matrixowl.github.io/post/dynamic-graph-1/">Dynamic Graph 1</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://matrixowl.github.io/post/so-this-must-be-a-bolg/">So ... this must be a bolg</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://matrixowl.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
+  </body>
+</html>

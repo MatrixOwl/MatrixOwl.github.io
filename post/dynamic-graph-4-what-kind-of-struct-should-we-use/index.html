@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>So ... this must be a bolg | What If?</title>
+<title>Dynamic Graph 4 -- What kind of struct should we use ? | What If?</title>
 <meta name="description" content="Let&#39;s fucking do something really interesting">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -65,19 +65,47 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>So ... this must be a bolg</h1>
+            <h1>Dynamic Graph 4 -- What kind of struct should we use ?</h1>
             <p class="article-meta">
-              2020-07-21
+              2020-08-10
               
             </p>
             
             <div class="post-content">
-              <p>Let's fucking do something really interesting</p>
+              <p>If you want to make a huge building, the first thing we have to do is know what this building will look like. You can't fucking build a building look like both tiananmen and wiltehouse. Or maybe you can but it will like a fucking strange monster.<br>
+So, this article will discussion about the struct of our dynamic network.<br>
+I think the network can simple divid into three part:</p>
+<ol>
+<li>The input block</li>
+<li>The memory block</li>
+<li>The output block<br>
+As for the type of neuron I said in the previous article, we temporary confirm there will only one variety. Becouse make the neuron different is bad of the expandability.<br>
+About the three block of our network:</li>
+<li>-- The input block<br>
+This block will used to deal with the diffierent kinds of data, extract there feature, than put them(the feature) into memory block to learn. And this part will have a dynamic connect with the memory block, when a node of memory block have a high &quot;vitality&quot;, it will completely not connect with input block.</li>
+<li>-- The memory block<br>
+This block is the main part of our network, the &quot;dynamic&quot; mostly means this block have a regular change. Becouse this part is maintain the memory function of network, just like the cerebral cortex(Just maybe, I have to say I'm not a good biology student).</li>
+<li>-- The output block<br>
+This block is just like the traditional neuron network, but it can add new node of new class.</li>
+</ol>
+<p>This article will just a simple intorduction of the dynamic network sturcture, we will make a detailed discussion in another article.<br>
+And so far, the problem in the second article all have a general outline.</p>
 
             </div>
           </article>
         </div>
         <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://matrixowl.github.io/post/dynamic-graph3-catas/">
+                <h3 class="post-title">
+                  Dynamic Graph3 -- Catastrophic forget
+                </h3>
+              </a>
+            </div>
           
         </div>
         

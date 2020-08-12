@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-08-10T11:39:49.623Z</updated>
+    <updated>2020-08-12T04:28:45.273Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -25,7 +25,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic Graph 4 -- What kind of struct should we use ?]]></title>
+        <title type="html"><![CDATA[Memory network 4 -- What kind of struct should we use ?]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-4-what-kind-of-struct-should-we-use/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-4-what-kind-of-struct-should-we-use/">
         </link>
@@ -51,7 +51,7 @@ And so far, the problem in the second article all have a general outline.</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic Graph3 -- Catastrophic forget]]></title>
+        <title type="html"><![CDATA[Memory network 3 -- Catastrophic forget]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph3-catas/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph3-catas/">
         </link>
@@ -81,7 +81,7 @@ We can see in this way we can keep the plasticity of our network and no need for
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic Graph 2 -- What problems we are face at?]]></title>
+        <title type="html"><![CDATA[Memory network 2 -- What problems we are face at?]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">
         </link>
@@ -101,7 +101,7 @@ So, what challenge we are faceing at?</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic Graph 1]]></title>
+        <title type="html"><![CDATA[Memory network 1]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-1/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-1/">
         </link>

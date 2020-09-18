@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-09-18T11:06:12.345Z</updated>
+    <updated>2020-09-18T11:12:27.385Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://matrixowl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, What If?</rights>
     <entry>
-        <title type="html"><![CDATA[Dynamic structure network 6 -- How should we init our network?]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 6 -- How should we initialize our network?]]></title>
         <id>https://matrixowl.github.io/post/dynamic-structure-network-6-how-should-we-init-the-network/</id>
         <link href="https://matrixowl.github.io/post/dynamic-structure-network-6-how-should-we-init-the-network/">
         </link>
@@ -22,7 +22,7 @@ For my opinion, we can have them both.<br>
 <img src="https://matrixowl.github.io/post-images/1600426792129.jpeg" alt="" loading="lazy"><br>
 (I want them all !!)<br>
 Now we can split the training process into two part. The first called &quot;Baby Training&quot; and the second part called &quot;Growing Training&quot;.<br>
-Baby Training's main job is training with the Dataset1. This part will just like</p>
+Baby Training's main job is training with the Dataset1. This part will just like Cascade-Correlation network. Before training start, we only get input layer and output layer. After training, we random remove some of the connect. Then we will get the initialize structure of our network.</p>
 ]]></content>
     </entry>
     <entry>

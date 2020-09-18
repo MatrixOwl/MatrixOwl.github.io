@@ -7,7 +7,7 @@
 <meta name="description" content="Let&#39;s fucking do something really interesting">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1600426111047">
+<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1600427170069">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -72,7 +72,13 @@
             </p>
             
             <div class="post-content">
-              <p>As last artical said, the simple init structure will made network overfitting when structure adaptive training. But it obvious, if the first time training make our network overfitting, the increase training will run into a great obstruction.</p>
+              <p>As last artical said, the simple initialize structure will made network overfitting when structure adaptive training. But it obvious, if the first time training make our network overfitting, the increase training will run into a great obstruction.<br>
+So now we have to find a way to overcome the overfitting during training or give our network a complex initialize structure.<br>
+For my opinion, we can have them both.<br>
+<img src="https://matrixowl.github.io/post-images/1600426792129.jpeg" alt="" loading="lazy"><br>
+(I want them all !!)<br>
+Now we can split the training process into two part. The first called &quot;Baby Training&quot; and the second part called &quot;Growing Training&quot;.<br>
+Baby Training's main job is training with the Dataset1. This part will just like</p>
 
             </div>
           </article>
@@ -96,7 +102,7 @@
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://matrixowl.github.io/images/avatar.png?v=1600426111047" class="no-responsive avatar">
+    <img src="https://matrixowl.github.io/images/avatar.png?v=1600427170069" class="no-responsive avatar">
     <div class="text-muted">Let's fucking do something really interesting</div>
     <div class="social-container">
       

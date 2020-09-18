@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-09-18T10:48:33.094Z</updated>
+    <updated>2020-09-18T11:06:12.345Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -16,7 +16,13 @@
         <link href="https://matrixowl.github.io/post/dynamic-structure-network-6-how-should-we-init-the-network/">
         </link>
         <updated>2020-09-18T10:36:42.000Z</updated>
-        <content type="html"><![CDATA[<p>As last artical said, the simple init structure will made network overfitting when structure adaptive training. But it obvious, if the first time training make our network overfitting, the increase training will run into a great obstruction.</p>
+        <content type="html"><![CDATA[<p>As last artical said, the simple initialize structure will made network overfitting when structure adaptive training. But it obvious, if the first time training make our network overfitting, the increase training will run into a great obstruction.<br>
+So now we have to find a way to overcome the overfitting during training or give our network a complex initialize structure.<br>
+For my opinion, we can have them both.<br>
+<img src="https://matrixowl.github.io/post-images/1600426792129.jpeg" alt="" loading="lazy"><br>
+(I want them all !!)<br>
+Now we can split the training process into two part. The first called &quot;Baby Training&quot; and the second part called &quot;Growing Training&quot;.<br>
+Baby Training's main job is training with the Dataset1. This part will just like</p>
 ]]></content>
     </entry>
     <entry>

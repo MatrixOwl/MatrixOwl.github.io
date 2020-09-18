@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matrixowl.github.io</id>
     <title>What If?</title>
-    <updated>2020-09-18T04:49:25.691Z</updated>
+    <updated>2020-09-18T10:48:33.094Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matrixowl.github.io"/>
     <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
@@ -11,7 +11,16 @@
     <icon>https://matrixowl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, What If?</rights>
     <entry>
-        <title type="html"><![CDATA[Dynamic graph network 5 -- Self Organizing and Structure Adaptive]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 6 -- How should we init our network?]]></title>
+        <id>https://matrixowl.github.io/post/dynamic-structure-network-6-how-should-we-init-the-network/</id>
+        <link href="https://matrixowl.github.io/post/dynamic-structure-network-6-how-should-we-init-the-network/">
+        </link>
+        <updated>2020-09-18T10:36:42.000Z</updated>
+        <content type="html"><![CDATA[<p>As last artical said, the simple init structure will made network overfitting when structure adaptive training. But it obvious, if the first time training make our network overfitting, the increase training will run into a great obstruction.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dynamic structure network 5 -- Self Organizing and Structure Adaptive]]></title>
         <id>https://matrixowl.github.io/post/memory-network-5-memory-and-knowledge/</id>
         <link href="https://matrixowl.github.io/post/memory-network-5-memory-and-knowledge/">
         </link>
@@ -24,7 +33,7 @@ So our work is related with the structure adaptive, but unlike the Cascade-Corre
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic graph network 4 -- What kind of struct should we use ?]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 4 -- What kind of struct should we use ?]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-4-what-kind-of-struct-should-we-use/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-4-what-kind-of-struct-should-we-use/">
         </link>
@@ -49,7 +58,7 @@ And so far, the problem in the second article all have a general outline.</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic graph network 3 -- Catastrophic forget]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 3 -- Catastrophic forget]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph3-catas/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph3-catas/">
         </link>
@@ -79,7 +88,7 @@ We can see in this way we can keep the plasticity of our network and no need for
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic graph network 2 -- What problems we are faceing at?]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 2 -- What problems we are faceing at?]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-what-problems-we-are-face-at/">
         </link>
@@ -94,12 +103,13 @@ So, what challenge we are faceing at?</p>
 <li>How should we make a back propagation in irregular network. Dynamic graph will couse a irregular network, it will very hard to make every neurous to follow a same rule when back propagaion, but if we make every neurou and connect have a single caculation will consumes a lot of computing resources.</li>
 <li>The input and output. How to deal with input data and output data is connect with last problem.</li>
 <li>How to decision when the neurous should increase and when to decrease. To deal with this problem, we should check every nuerou's active, and make the over active nuerou be keep and make the unactive nuerous decrease. Or another idea is just increase but not decrease, we make network running, when the unactive nuerous lower than a threshold the nuerous of our network will increase. This is also very tricky.</li>
-<li>Will graph become a network composition by many cluster? Maybe, I guess will.</li>
+<li>Will graph become a network composition by many cluster? Maybe, I guess will.<br>
+<img src="https://matrixowl.github.io/post-images/1600426091297.png" alt="" loading="lazy"></li>
 </ol>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dynamic graph network 1]]></title>
+        <title type="html"><![CDATA[Dynamic structure network 1]]></title>
         <id>https://matrixowl.github.io/post/dynamic-graph-1/</id>
         <link href="https://matrixowl.github.io/post/dynamic-graph-1/">
         </link>

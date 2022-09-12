@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://matrixowl.github.io</id>
+    <title>What If ?</title>
+    <updated>2022-09-12T08:08:31.316Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://matrixowl.github.io"/>
+    <link rel="self" href="https://matrixowl.github.io/atom.xml"/>
+    <subtitle>What if we put it here...</subtitle>
+    <logo>https://matrixowl.github.io/images/avatar.png</logo>
+    <icon>https://matrixowl.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, What If ?</rights>
+    <entry>
+        <title type="html"><![CDATA[周报（2022.9.12）]]></title>
+        <id>https://matrixowl.github.io/post/zhou-bao-2022912/</id>
+        <link href="https://matrixowl.github.io/post/zhou-bao-2022912/">
+        </link>
+        <updated>2022-09-12T06:51:49.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="海马体的相关内容">海马体的相关内容</h2>
+<p>海马体可以做情景记忆和地图认知<br>
+大脑构建空间认知地图的能力和构建情景记忆有一定相关性<br>
+目前有相关的工作讨论了海马体的一些性质（Complementary Learning System）<br>
+<img src="https://matrixowl.github.io/post-images/1662966075557.JPG" alt="" loading="lazy"><br>
+对具体事件和抽象信息的学习在这个理论下统一在海马体的两个不同回路中，图中DG区存储个性化的经历并尽力存储不同的经历，而CA1区域则用来抽取一般性的，具有共性的信息、<br>
+EC-&gt;DG-&gt;CA3使不同的事件分离<br>
+EC-&gt;CA1使不同的事件重叠<br>
+海马不存储具体的事件细节，只存储索引，细节存储在皮层的感知区<br>
+有一些工作把Complementary Learning System的原理用在Continual Learning上，但是好像都只是用了一部分，我最近再看一些相关的东西</p>
+<h2 id="context-dependent-processing">Context-Dependent Processing</h2>
+<p>最近在课上听的内容，感觉这个方向的工作也比较有价值<br>
+这个方向的工作主要聚焦在认识控制（Cognitive Control）上，即对应相同的内容在不同的环境下可以给出很多答案，可以随机应变地处理，在大脑中也有类似的监控机制（主要是在上丘脑和前额叶）来调节神经元的活动<br>
+现有的工作基于这个原理提出了PFC-like module<br>
+<img src="https://matrixowl.github.io/post-images/1662967820580.png" alt="" loading="lazy"><br>
+本质上是使Feature在Feature Space里旋转，根据情景旋转输出，在相同的输入下，输出不同的结果<br>
+我觉得这样的结构也可以用在结合了海马体机制的神经网络中，可以比较好的模拟海马体和皮层的相互作用</p>
+<h2 id="关于仿生鱼和人形机器人">关于仿生鱼和人形机器人</h2>
+<p>仿生鱼的话医学院那边的同学准备用干细胞诱导肌肉细胞以及对活鱼做解剖获得肌肉细胞，然后通过鱼的AI和控制芯片发出微弱的电信号控制肌肉活动，同时在肌肉管上附着柔性电阻来获得肌肉的运动状态<br>
+这样的话AI的输入为传感器信号，输出为电流强度，电流刺激肌肉运动获得新的传感器信号采样，这样形成仿生鱼的闭环控制系统，AI需要在鱼的体外进行预先训练，这样的话就需要对预期要做的仿生鱼还有预期的运动模式进行建模来获得数据，然后使用强化学习的方法训练<br>
+我在想能不能给仿生鱼的AI加入持续学习的能力，但是具体的做法还需要想一下，现在如何获得比较好的训练数据还是个问题，在和医学院那边的同学交流看能不能采集到质量比较高的，真实的鱼类运动数据<br>
+然后关于人形机器人的话我在想有没有可能利用一些仿生鱼这样的生物混合的方法，但是干细胞培育的肌肉管做不到太长，或者可以和材料相关的人合作做一些类似肌肉的组织？这样的生物混合机器人似乎也是比较前沿的方向，感觉可以做一些工作</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[周报（2022.9.5）]]></title>
+        <id>https://matrixowl.github.io/post/zhou-bao-202295/</id>
+        <link href="https://matrixowl.github.io/post/zhou-bao-202295/">
+        </link>
+        <updated>2022-09-05T01:42:04.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="看了一些和大脑相关的文章">看了一些和大脑相关的文章</h2>
+<p>在生物学的角度发现了一些在类脑AI中可以进一步发展和利用的机制，主要有以下几点</p>
+<blockquote>
+<ul>
+<li>Cortical Minicolum：在大脑中，簇状结构的神经元是信息传递的基本单元，一个簇状神经结构由多个神经元组成。目前已经有一些相关的工作（Capsule Network）其中每个Capsule对应一个簇状体，针对性地学习某一组特征</li>
+<li>动态网络连接：生物神经网络中神经元之间的连接强度是随着其工作状态不断变化的，即权重随着工作状态不断变化，而不只局限与学习时更新，有观点认为动态网络连接的作用是承载生物工作记忆（确实很合理，网络不断变化的话可以保证工作记忆随着环境变化不断更新）</li>
+<li>Top Down Processing：生物大脑中存在反馈连接，目前观点认为这是从高级脑区向感官的反向调节，即生物神经网络不是被动认知和识别，而是在感知层和认知层之间存在反馈结构，以保证感知和认知是相统一的<img src="https://matrixowl.github.io/post-images/1662344070647.JPG" alt="" loading="lazy"></li>
+<li>Dale Principle：在大脑中兴奋型和抑制型神经元是分开的，大脑使用抑制型神经元对信息流动进行调控（感觉这个机制很像attention或者LSTM的门控机制）</li>
+<li>临界状态（Critical State）：临界状态理论认为当一个神经元只可以激活少量神经元的状态下信息可以得到更好的保存，这种状态已经被证实是真实大脑的状态，现在Reservior Model相关的工作利用了临界状态的机理，还有Batch-Norm也是基于相同的机理</li>
+<li>自由能假说（这个有点不理解，回头再看看）</li>
+<li>Grid Cells：海马栅格细胞，也有一些工作在不断推进相关的机理在AI中的运用，海马栅格细胞可以集群表征空间位置，类似于对物体所在位置做傅里叶变换，对环境中的物体形成通用的空间表示，保证在新环境里也可以灵活学习物体的位置（我认为海马体相关的机理在AI中都可以有很好的发展，之后可能再看一些这个方面的工作）</li>
+</ul>
+</blockquote>
+<h2 id="记忆系统相关的内容">记忆系统相关的内容</h2>
+<p>现有的生物记忆系统的工作还不是很完善，很多学说还没有完善<br>
+<img src="https://matrixowl.github.io/post-images/1662345332698.jpeg" alt="" loading="lazy"><br>
+这是目前记忆系统相关机理中比较完善的部分（MTL是海马体系统），关键点在情景记忆如何固化为语义记忆，语义记忆又如何还原成情景记忆，在记忆固化中，暂时性细胞连接在MTL和新皮层的作用下诱发神经元不断活动形成持续性的长久连接</p>
+<h2 id="关于人形机器人相关的内容">关于人形机器人相关的内容</h2>
+<p>在类脑的角度看人形机器人的话我觉得主要的方向可以把方向放在多模态感知，类脑控制和认知这三个角度</p>
+<blockquote>
+<ul>
+<li>在多模态感知上的工作已经比较多了，大脑在各种感知上的处理方法是让神经元在感知层做分化，以不同的方法编码，在认知层使用完全相同的结构使不同的信息融合，不过最近微软好像做了一个有点类似大统一的AI，他们把图片也当作一种语言进行编码，使图像任务和语言任务统一在一个模型中，不过我觉得这种做法好像不太自然，毕竟图片的信息是自然产生的，语言的信息是人为附加的，两种信息结构应该还是有一些差别的，这样的大统一方法可能有一些工程理论（Encode-Decode）支持，不过在生物层面可能还有待商榷</li>
+<li>机器人控制的话可以模仿人脑中大脑和小脑分化的模式，大脑负责复杂的信息处理和感知认知工作，然后在需要运动的时候把信号（较为简单的信号）发送给小脑，小脑做信号的整合和分化之后通过神经系统传递给全身的肌肉细胞，肌肉细胞运动后的反馈也由小脑简单处理后传递给大脑做汇总，这样的话小脑只负责一些相对简单的工作，这个过程可以被认为是Encode(大脑)-Decode(小脑)-Encode(小脑)-Decode(肌肉的控制神经)。这样的话控制神经只需要学习一些简单的信号，小脑的处理能力也不需要太强，给大脑留出了足够的算力进行更复杂的工作</li>
+<li>认知的话好像可以和认知心理学相关的一些东西放在一起，让机器人在人机交互，环境交互的过程中不断强化认知，不过这个角度还需要很多思考和讨论</li>
+</ul>
+</blockquote>
+<h2 id="最近计划和一个医学院的同学合作一个仿生鱼的项目">最近计划和一个医学院的同学合作一个仿生鱼的项目</h2>
+<p>医学院的同学计划用肌肉细胞和一些适合肌肉细胞附着的材料进行仿生鱼再造，我们这边可以主要负责用机器学习的方法搞出来仿生鱼的姿态-运动控制系统，还有肌肉细胞分布的演化算法，通过写入芯片的控制系统发送电信号给肌肉细胞让仿生鱼可以持续运动，医学院那边主要做鱼的肌肉管，还有一个搞生物材料的同学可以在鱼的解剖结构以及材料上做一些工作（出文章的话我们三个谈好是共同一作）<br>
+未来这个方向的话还可以向神经细胞自主学习，类器官之类的方向推进，感觉是个可以合作一下的项目</p>
+]]></content>
+    </entry>
+</feed>

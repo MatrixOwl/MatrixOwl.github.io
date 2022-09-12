@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>周报（2022.9.5） | What If ?</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://matrixowl.github.io/favicon.ico?v=1662970104319">
+<link rel="stylesheet" href="https://matrixowl.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="看了一些和大脑相关的文章
+在生物学的角度发现了一些在类脑AI中可以进一步发展和利用的机制，主要有以下几点
+
+
+Cortical Minicolum：在大脑中，簇状结构的神经元是信息传递的基本单元，一个簇状神经结构由多个神经元组成。目前已经有..." />
+    <meta name="keywords" content="周报归档" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://matrixowl.github.io">
+        <img src="https://matrixowl.github.io/images/avatar.png?v=1662970104319" class="site-logo">
+        <h1 class="site-title">What If ?</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      What if we put it here...
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://matrixowl.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">周报（2022.9.5）</h2>
+            <div class="post-date">2022-09-05</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="看了一些和大脑相关的文章">看了一些和大脑相关的文章</h2>
+<p>在生物学的角度发现了一些在类脑AI中可以进一步发展和利用的机制，主要有以下几点</p>
+<blockquote>
+<ul>
+<li>Cortical Minicolum：在大脑中，簇状结构的神经元是信息传递的基本单元，一个簇状神经结构由多个神经元组成。目前已经有一些相关的工作（Capsule Network）其中每个Capsule对应一个簇状体，针对性地学习某一组特征</li>
+<li>动态网络连接：生物神经网络中神经元之间的连接强度是随着其工作状态不断变化的，即权重随着工作状态不断变化，而不只局限与学习时更新，有观点认为动态网络连接的作用是承载生物工作记忆（确实很合理，网络不断变化的话可以保证工作记忆随着环境变化不断更新）</li>
+<li>Top Down Processing：生物大脑中存在反馈连接，目前观点认为这是从高级脑区向感官的反向调节，即生物神经网络不是被动认知和识别，而是在感知层和认知层之间存在反馈结构，以保证感知和认知是相统一的<img src="https://matrixowl.github.io/post-images/1662344070647.JPG" alt="" loading="lazy"></li>
+<li>Dale Principle：在大脑中兴奋型和抑制型神经元是分开的，大脑使用抑制型神经元对信息流动进行调控（感觉这个机制很像attention或者LSTM的门控机制）</li>
+<li>临界状态（Critical State）：临界状态理论认为当一个神经元只可以激活少量神经元的状态下信息可以得到更好的保存，这种状态已经被证实是真实大脑的状态，现在Reservior Model相关的工作利用了临界状态的机理，还有Batch-Norm也是基于相同的机理</li>
+<li>自由能假说（这个有点不理解，回头再看看）</li>
+<li>Grid Cells：海马栅格细胞，也有一些工作在不断推进相关的机理在AI中的运用，海马栅格细胞可以集群表征空间位置，类似于对物体所在位置做傅里叶变换，对环境中的物体形成通用的空间表示，保证在新环境里也可以灵活学习物体的位置（我认为海马体相关的机理在AI中都可以有很好的发展，之后可能再看一些这个方面的工作）</li>
+</ul>
+</blockquote>
+<h2 id="记忆系统相关的内容">记忆系统相关的内容</h2>
+<p>现有的生物记忆系统的工作还不是很完善，很多学说还没有完善<br>
+<img src="https://matrixowl.github.io/post-images/1662345332698.jpeg" alt="" loading="lazy"><br>
+这是目前记忆系统相关机理中比较完善的部分（MTL是海马体系统），关键点在情景记忆如何固化为语义记忆，语义记忆又如何还原成情景记忆，在记忆固化中，暂时性细胞连接在MTL和新皮层的作用下诱发神经元不断活动形成持续性的长久连接</p>
+<h2 id="关于人形机器人相关的内容">关于人形机器人相关的内容</h2>
+<p>在类脑的角度看人形机器人的话我觉得主要的方向可以把方向放在多模态感知，类脑控制和认知这三个角度</p>
+<blockquote>
+<ul>
+<li>在多模态感知上的工作已经比较多了，大脑在各种感知上的处理方法是让神经元在感知层做分化，以不同的方法编码，在认知层使用完全相同的结构使不同的信息融合，不过最近微软好像做了一个有点类似大统一的AI，他们把图片也当作一种语言进行编码，使图像任务和语言任务统一在一个模型中，不过我觉得这种做法好像不太自然，毕竟图片的信息是自然产生的，语言的信息是人为附加的，两种信息结构应该还是有一些差别的，这样的大统一方法可能有一些工程理论（Encode-Decode）支持，不过在生物层面可能还有待商榷</li>
+<li>机器人控制的话可以模仿人脑中大脑和小脑分化的模式，大脑负责复杂的信息处理和感知认知工作，然后在需要运动的时候把信号（较为简单的信号）发送给小脑，小脑做信号的整合和分化之后通过神经系统传递给全身的肌肉细胞，肌肉细胞运动后的反馈也由小脑简单处理后传递给大脑做汇总，这样的话小脑只负责一些相对简单的工作，这个过程可以被认为是Encode(大脑)-Decode(小脑)-Encode(小脑)-Decode(肌肉的控制神经)。这样的话控制神经只需要学习一些简单的信号，小脑的处理能力也不需要太强，给大脑留出了足够的算力进行更复杂的工作</li>
+<li>认知的话好像可以和认知心理学相关的一些东西放在一起，让机器人在人机交互，环境交互的过程中不断强化认知，不过这个角度还需要很多思考和讨论</li>
+</ul>
+</blockquote>
+<h2 id="最近计划和一个医学院的同学合作一个仿生鱼的项目">最近计划和一个医学院的同学合作一个仿生鱼的项目</h2>
+<p>医学院的同学计划用肌肉细胞和一些适合肌肉细胞附着的材料进行仿生鱼再造，我们这边可以主要负责用机器学习的方法搞出来仿生鱼的姿态-运动控制系统，还有肌肉细胞分布的演化算法，通过写入芯片的控制系统发送电信号给肌肉细胞让仿生鱼可以持续运动，医学院那边主要做鱼的肌肉管，还有一个搞生物材料的同学可以在鱼的解剖结构以及材料上做一些工作（出文章的话我们三个谈好是共同一作）<br>
+未来这个方向的话还可以向神经细胞自主学习，类器官之类的方向推进，感觉是个可以合作一下的项目</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://matrixowl.github.io/tag/uE8GhJGpw/" class="tag">
+                    周报归档
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '4302f14844ad14b96bf4',
+        clientSecret: '89b0b7bcc4c41ff52eb927a9ddee7249ff70608d',
+        repo: 'MatrixOwl.github.io',
+        owner: 'MatrixOwl',
+        admin: ['MatrixOwl'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
